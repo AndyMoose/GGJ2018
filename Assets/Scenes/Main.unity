@@ -411,7 +411,7 @@ Prefab:
         type: 2}
       propertyPath: snot
       value: 
-      objectReference: {fileID: 1695533060887596, guid: aa3e125962e7fc54b8f2619d7087f1d6,
+      objectReference: {fileID: 1666746423895242, guid: aa3e125962e7fc54b8f2619d7087f1d6,
         type: 2}
     - target: {fileID: 114628809585313290, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
         type: 2}
@@ -422,6 +422,21 @@ Prefab:
         type: 2}
       propertyPath: fireRate
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50999457259085598, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
+        type: 2}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 50999457259085598, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70386221515146918, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc0bde1010f959248aa2e9ef8e61b9cd, type: 2}
