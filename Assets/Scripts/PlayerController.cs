@@ -19,10 +19,10 @@ public class PlayerController: MonoBehaviour {
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        xMin = -12f;
-        xMax = 12f;
-        yMin = -6f;
-        yMax = 6f;
+        xMin = -11f;
+        xMax = 8f;
+        yMin = -9f;
+        yMax = 10f;
     }
 
     private void Update()
