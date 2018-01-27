@@ -324,6 +324,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114134305003302074, guid: 2f03e2532091ad049adbf4d3fb9d8431,
+        type: 2}
+      propertyPath: walkzone
+      value: 
+      objectReference: {fileID: 1627281443}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f03e2532091ad049adbf4d3fb9d8431, type: 2}
   m_IsPrefabParent: 0
@@ -414,6 +419,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114421351084633104, guid: ae629cd95c909b9438617ae1b90be3db,
+        type: 2}
+      propertyPath: walkzone
+      value: 
+      objectReference: {fileID: 1627281443}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae629cd95c909b9438617ae1b90be3db, type: 2}
   m_IsPrefabParent: 0
@@ -697,6 +707,60 @@ Transform:
   m_PrefabParentObject: {fileID: 4874133562110842, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
     type: 2}
   m_PrefabInternal: {fileID: 2128990540}
+--- !u!1 &1627281442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1627281444}
+  - component: {fileID: 1627281443}
+  m_Layer: 10
+  m_Name: walkarea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1627281443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627281442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.16460991, y: 1.531434}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.14487, y: 19.130846}
+  m_EdgeRadius: 0
+--- !u!4 &1627281444
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627281442}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4560183, y: -0.9527509, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1640496108
 Prefab:
   m_ObjectHideFlags: 0
@@ -736,14 +800,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4685683950106072, guid: 5683e075e8e47d64a8f763c2e07be387, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685683950106072, guid: 5683e075e8e47d64a8f763c2e07be387, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
+    - target: {fileID: 114915908826219354, guid: 5683e075e8e47d64a8f763c2e07be387,
+        type: 2}
+      propertyPath: walkzone
+      value: 
+      objectReference: {fileID: 1627281443}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5683e075e8e47d64a8f763c2e07be387, type: 2}
   m_IsPrefabParent: 0
@@ -820,7 +881,7 @@ Prefab:
     - target: {fileID: 114628809585313290, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
         type: 2}
       propertyPath: runSpeed
-      value: 75
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 50999457259085598, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
         type: 2}
@@ -836,6 +897,14 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874133562110842, guid: fc0bde1010f959248aa2e9ef8e61b9cd, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874133562110842, guid: fc0bde1010f959248aa2e9ef8e61b9cd, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc0bde1010f959248aa2e9ef8e61b9cd, type: 2}

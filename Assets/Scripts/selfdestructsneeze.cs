@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class selfdestructsneeze : MonoBehaviour {
 
-    private float timer;
-    public float stayLength;
-	
-	// Update is called once per frame
-	void Update () {
-        timer += 1.0F * Time.deltaTime;
-        if (timer >= stayLength)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "npc")
         {
-            GameObject.Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
+    
+

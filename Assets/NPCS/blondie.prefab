@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114903300548192290}
   m_Layer: 0
   m_Name: blondie
-  m_TagString: Untagged
+  m_TagString: npc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   isWalking: 1
   walkTime: 2
   waitTime: 1
+  walkzone: {fileID: 0}
 --- !u!114 &114903300548192290
 MonoBehaviour:
   m_ObjectHideFlags: 1
