@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController: MonoBehaviour {
 
     public float speed;
+    public float runSpeed;
 
     private float xMin, xMax, yMin, yMax;
     private new Rigidbody2D rigidbody;
@@ -56,8 +57,13 @@ public class PlayerController: MonoBehaviour {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position);
 
+        while (Input.GetKeyDown(KeyCode.LeftShift) == true)
+        {
+            rigidbody.velocity = movement * runSpeed;
+        }
 
     }
+
     IEnumerator PauseMovement()
     {
         //Backup and clear velocities
