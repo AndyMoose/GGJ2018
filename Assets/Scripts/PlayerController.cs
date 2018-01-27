@@ -18,6 +18,18 @@ public class PlayerController : MonoBehaviour
     private float nextFire;
     private float timer;
 
+    AudioSource sneeze1;
+    AudioSource sneeze2;
+    AudioSource sneeze3;
+
+    private void Start()
+    {
+        AudioSource[] audios = GetComponents<AudioSource>();
+        sneeze1 = audios[0];
+        sneeze2 = audios[1];
+        sneeze3 = audios[2];
+    }
+
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -35,6 +47,20 @@ public class PlayerController : MonoBehaviour
             Vector2 stayStill = transform.position;
             nextFire = Time.time + fireRate;
             Instantiate(snot, snotPos.position, snotPos.rotation);
+
+            int index = Random.Range(0, 2);
+            if (index == 0)
+            {
+                sneeze1.Play();
+            }
+            else if (index == 1)
+            {
+                sneeze2.Play();
+            }
+            else if (index == 2)
+            {
+                sneeze3.Play();
+            }
 
             StartCoroutine(PauseMovement());
         }
