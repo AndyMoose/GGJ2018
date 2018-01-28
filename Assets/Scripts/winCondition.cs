@@ -15,6 +15,7 @@ public class winCondition : MonoBehaviour {
 
     public bool won;
     private bool soundPlayed;
+    public Text opendoor;
 
     // Use this for initialization
     void Start () {
@@ -22,6 +23,7 @@ public class winCondition : MonoBehaviour {
         fanfare = GetComponent<AudioSource>();
         won = false;
         soundPlayed = false;
+        opendoor.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -30,6 +32,7 @@ public class winCondition : MonoBehaviour {
         {
             //gameWin.enabled = true;
             door.GetComponent<dooropen>().opendoor = true;
+            opendoor.enabled = true;
 
         }
         if(won && soundPlayed == false)
