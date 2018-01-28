@@ -25,6 +25,9 @@ public class hazmatMaster : MonoBehaviour
 
     public Collider2D walkzone;
 
+    public Transform hazmatTransform;
+    public Transform playerTransform;
+
     private int walkDir;
     // Use this for initialization
     void Start()
@@ -55,8 +58,6 @@ public class hazmatMaster : MonoBehaviour
         
          
             if (isWalking)
-            {
-            if (!chasing)
             {
                 if (chasing == false)
                 {
@@ -155,6 +156,13 @@ public class hazmatMaster : MonoBehaviour
                         waitCounter = waitTime;
                     }
                 }
+            
+            else
+            {
+                Vector3 vectorToTarget = hazmatTransform.position - playerTransform.position;
+                float angle = (Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg) + 90;
+                Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+                transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * 180);
             }
             // sneeze
             if (spriteRenderer.sprite == sprite2)
@@ -165,7 +173,7 @@ public class hazmatMaster : MonoBehaviour
         }
         else
         {
-            if (chasing == false)
+            if (!chasing)
             {
                 waitCounter -= Time.deltaTime;
 

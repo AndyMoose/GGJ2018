@@ -10,6 +10,8 @@ TagManager:
   - npc
   - hazmat
   - obstacle
+  - windoor
+  - winarea
   layers:
   - Default
   - TransparentFX

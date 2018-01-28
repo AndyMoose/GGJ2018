@@ -79,14 +79,24 @@
     <Compile Include="Assets\Scripts\capsulecol.cs" />
     <Compile Include="Assets\Scripts\cleanable.cs" />
     <Compile Include="Assets\Scripts\cleansnot.cs" />
+    <Compile Include="Assets\Scripts\dooropen.cs" />
     <Compile Include="Assets\Scripts\hazmatMaster.cs" />
+    <Compile Include="Assets\Scripts\loseCondition.cs" />
+    <Compile Include="Assets\Scripts\Menus\levelSelect.cs" />
+    <Compile Include="Assets\Scripts\Menus\mainMenuPlay.cs" />
+    <Compile Include="Assets\Scripts\Menus\replayLevel.cs" />
     <Compile Include="Assets\Scripts\NPC_Movement.cs" />
+    <Compile Include="Assets\Scripts\NPC_Sneezing.cs" />
     <Compile Include="Assets\Scripts\NPCcontroller.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\playerLoseCollision.cs" />
+    <Compile Include="Assets\Scripts\playerTracking.cs" />
     <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Scripts\selfdestructsneeze.cs" />
     <Compile Include="Assets\Scripts\sneezedetect.cs" />
-    <Compile Include="Assets\Scripts\winLoseCondition.cs" />
+    <Compile Include="Assets\Scripts\threesneezedetect.cs" />
+    <Compile Include="Assets\Scripts\winCondition.cs" />
+    <Compile Include="Assets\Scripts\winning.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

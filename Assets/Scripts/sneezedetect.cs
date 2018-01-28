@@ -9,6 +9,7 @@ public class sneezedetect : MonoBehaviour {
     private char select;
     public bool sneezing;
 
+
     private void Start()
     {
         chase = false;
@@ -18,38 +19,42 @@ public class sneezedetect : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D collision)
     {
 
-        if (collision.tag == "Sneeze")
+        if (collision.tag == "Player")
+        {
+            fuck = collision;
+            chase = true;
+            select = 'b';
+
+        }
+        else if (collision.tag == "Sneeze")
         {
             if(collision.gameObject.GetComponent<cleanable>().clean)
             {
                 fuck = collision;
                 chase = true;
                 select = 'a';
-                GetComponentInParent<Transform>().LookAt(collision.gameObject.transform);
-                Debug.Log("Lookie");
+
             }
             
         }
-        else if (collision.tag == "Player")
-        {
-                fuck = collision;
-                chase = true;
-                select = 'b';
-                GetComponentInParent<Transform>().LookAt(collision.gameObject.transform);
-
-        }
+        
 
 
     }
-    private void Update()
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player" || collision.tag == "Sneeze")
+            chase = false;
+    }
+        private void Update()
     {
         if(!sneezing){
             if (chase)
             {
                 GetComponentInParent<hazmatMaster>().chasing = true;
                 GetComponentInParent<Rigidbody2D>().position = Vector2.MoveTowards(GetComponentInParent<Rigidbody2D>().transform.position, fuck.gameObject.GetComponent<Rigidbody2D>().transform.position, .05f);
-                chase = false;
-                Debug.Log(GetComponentInParent<Rigidbody2D>().velocity);
+                //chase = false;
+
 
             }
             else
