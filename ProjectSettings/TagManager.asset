@@ -8,6 +8,7 @@ TagManager:
   - Sneeze
   - boundaries
   - npc
+  - hazmat
   layers:
   - Default
   - TransparentFX

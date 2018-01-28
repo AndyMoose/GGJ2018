@@ -23,6 +23,7 @@ public class NPCcontroller : MonoBehaviour
             if (spriteRenderer.sprite == sprite1) 
             {
                 spriteRenderer.sprite = sprite2;
+                ScoreScript.scoreValue += 1;
             }
         }
     }

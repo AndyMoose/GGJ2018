@@ -19,7 +19,6 @@ public class NPC_Movement : MonoBehaviour
     private Vector2 maxWalkPoint;
 
     public Collider2D walkzone;
-    private Vector3 moveDirection = Vector3.zero;
 
     private int walkDir;
     // Use this for initialization
@@ -160,4 +159,6 @@ public class NPC_Movement : MonoBehaviour
         walkCounter = walkTime;
     }
 }
+
+
 
