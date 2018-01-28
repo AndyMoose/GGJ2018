@@ -284,6 +284,7 @@ RectTransform:
   - {fileID: 444201755}
   - {fileID: 627931073}
   - {fileID: 1007531972}
+  - {fileID: 1812595274}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -314,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40818b85ef184694ab34f87dd84d812b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: 
+  destination: Hospital
 --- !u!1 &444201754
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +327,7 @@ GameObject:
   - component: {fileID: 444201757}
   - component: {fileID: 444201756}
   m_Layer: 5
-  m_Name: winScreen
+  m_Name: loseScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +370,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8fa429a74aeb1134785ab64f3d4f54b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6cf0030157a270849a6ad0e8e6a548ee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -911,10 +912,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1812595271}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -438.5, y: -211.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 234605710}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

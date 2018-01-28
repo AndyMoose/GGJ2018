@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class hazmatMaster : MonoBehaviour
 {
+    public bool chasing;
+
     public Sprite sprite1;
     public Sprite sprite2;
     private SpriteRenderer spriteRenderer;
@@ -24,10 +26,11 @@ public class hazmatMaster : MonoBehaviour
     public Collider2D walkzone;
 
     private int walkDir;
-    public bool chasing;
     // Use this for initialization
     void Start()
     {
+        chasing = false;
+
         myRigidBody = GetComponent<Rigidbody2D>();
 
         waitCounter = waitTime;
@@ -44,7 +47,6 @@ public class hazmatMaster : MonoBehaviour
             maxWalkPoint = walkzone.bounds.max;
             hasWalkZone = true;
         }
-        chasing = false;
     }
 
     // Update is called once per frame

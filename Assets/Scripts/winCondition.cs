@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class winLoseCondition : MonoBehaviour {
+public class winCondition : MonoBehaviour {
 
     public int totalNPCs;
     //private NPCcontroller infectedNPCs;
 
-    private Image gameWin;
+    private Canvas gameWin;
 
     // Use this for initialization
     void Start () {
-        gameWin = gameObject.GetComponent<Image>();
+        gameWin = gameObject.GetComponent<Canvas>();
 	}
 	
 	// Update is called once per frame
