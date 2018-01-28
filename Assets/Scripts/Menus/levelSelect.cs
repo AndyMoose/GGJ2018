@@ -20,9 +20,20 @@ public class levelSelect : MonoBehaviour
 
     }
 
-    public void OnMouseClick()
+    public void OnMouseClickHospital()
     {
         //Application.LoadLevel(destination);
-        SceneManager.LoadScene(destination);
+        SceneManager.LoadScene("Hospital");
+    }
+    public void OnMouseClickStreets()
+    {
+        //Application.LoadLevel(destination);
+        SceneManager.LoadScene("Streets");
+    }
+
+    public void OnMouseClickReadme()
+    {
+        //Application.LoadLevel(destination);
+        SceneManager.LoadScene("Readme");
     }
 }

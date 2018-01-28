@@ -7,7 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 6bb6f2cf6f455b54da9d9409e5cfee06
+    guid: 1516951b9fd4cd14fa10eccc19c34703
+  - enabled: 1
+    path: Assets/Scenes/Readme.unity
+    guid: fee083452f8d43346aa28d1aa9d0755b
   - enabled: 1
     path: Assets/Scenes/Hospital.unity
     guid: 33571ab089af7a944bb71de6299f35f5
+  - enabled: 1
+    path: Assets/Scenes/Streets.unity
+    guid: 01160750b9d657a45a36e0126b082c31

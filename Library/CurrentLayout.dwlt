@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -205,8 +205,8 @@ MonoBehaviour:
     y: 0
     width: 400
     height: 581
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -366,14 +366,14 @@ MonoBehaviour:
     width: 1063
     height: 560
   m_SceneLighting: 1
-  lastFramingTime: 193.83815615134216
+  lastFramingTime: 4542.770445217002
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.107927, y: -13.821106, z: 0}
+    m_Target: {x: 745.04987, y: 173.92462, z: 0}
     speed: 2
-    m_Value: {x: 10.107927, y: -13.821106, z: 0}
+    m_Value: {x: 745.04987, y: 173.92462, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -400,9 +400,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 76.18169
+    m_Target: 433.04913
     speed: 2
-    m_Value: 76.18169
+    m_Value: 433.04913
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -541,26 +541,26 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 583fffff1afcffff000000003a28000092280000ea2800008e3f0000
+    m_ExpandedIDs: 28bbf1fff6bbf1fffebef1ff64c0f1ff68c0f1ff6ec0f1ff4ac7f1ff18c8f1ff24cbf1ff8eccf1ff96ccf1ffa0ccf1ffe0d5f1ffe4d6f1ffe2d9f1ff66f5f1ffa0fbf1ff086ef2fff6a9f2ff62aaf2ff6aaaf2ff42abf2ff92aef2ff3eb7f2ff382df3fffe2ef3ff0a3df3ffde3df3ff2841f3ff8e42f3ff9442f3ff9842f3ff029df3ffc0a8f3ff72b7f3ffd084f4ff3e85f4ff1e86f4ff86dff4ffe803f5ff4a1df5ff1c25f5ff862df5ff588bf5ffc68bf5ff548cf5fffea9f5ffe4baf5fffc2af6ffc630f6ffb05cf6ff205df6ff005ef6ffd284f6ffce85f6ffe09bf6fffca2f6ffdca3f6ff20aef6ff00caf6ffe0caf6ffb0dff6ff8aa3f7ff18a6f7ffc4a8f7ff7630f8ff5833f8ff6639f8ff0051f8ff1c57f8ff18a7fdff7ab0fdff66dafdffc464feffb6c1ffff5ee8ffff22f5ffff000000007051000078510000a4510000bc510000da5100003252000090520000be520000ca520000fc520000205300002853000070530000865300008e530000b2530000ec530000fa53000000540000105400001e540000acd40000f2e5000036ed0000a4ee000052050100c40601005c1b0100942b0100b22b01001a33010078360100347101003e7b0100189c0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: READ ME
+      m_OriginalName: READ ME
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 76722
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Hospital
+  - Readme
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -602,19 +602,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity\GGJ2018
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d0260000
-    m_LastClickedID: 9936
-    m_ExpandedIDs: 0000000038260000462600004e260000da260000722a000000ca9a3bffffff7f
+    m_SelectedIDs: fe2c0000
+    m_LastClickedID: 11518
+    m_ExpandedIDs: 00000000622c00006a2c00006e2c0000da2c00005430000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,7 +642,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000038260000462600004e260000da260000722a0000
+    m_ExpandedIDs: 00000000622c00006a2c00006e2c0000da2c000054300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
