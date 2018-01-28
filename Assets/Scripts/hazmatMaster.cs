@@ -22,7 +22,6 @@ public class hazmatMaster : MonoBehaviour
     private Vector2 maxWalkPoint;
 
     public Collider2D walkzone;
-    private Vector3 moveDirection = Vector3.zero;
 
     private int walkDir;
     public bool chasing;
@@ -55,103 +54,107 @@ public class hazmatMaster : MonoBehaviour
          
             if (isWalking)
             {
-            if (chasing == false)
+            if (!chasing)
             {
-                walkCounter -= Time.deltaTime;
-
-                switch (walkDir)
+                if (chasing == false)
                 {
-                    case 0:
-                        //move up
-                        myRigidBody.velocity = new Vector2(0, speed);
-                        //checks y pos compated to bounded y
-                        if (hasWalkZone && transform.position.y > maxWalkPoint.y)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                    case 1:
-                        //move up and to the right
-                        myRigidBody.velocity = new Vector2(speed, speed);
-                        //checks y compred to  max bounded y or x compared to max bounded x
-                        if (hasWalkZone && transform.position.y > maxWalkPoint.y || transform.position.x > maxWalkPoint.x)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                    case 2:
-                        ////move to the right
-                        myRigidBody.velocity = new Vector2(speed, 0);
-                        //checks x compared to max bounded x
-                        if (hasWalkZone && transform.position.x > maxWalkPoint.x)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                    case 3:
-                        //move down and to the right
-                        myRigidBody.velocity = new Vector2(speed, (speed * -1));
-                        //checks y compared to min bounded y or x compared to max bounded x
-                        if (hasWalkZone && transform.position.y < minWalkPoint.y || transform.position.x > maxWalkPoint.x)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                    case 4:
-                        //move down
-                        myRigidBody.velocity = new Vector2(0, (speed * -1));
-                        //checks y compared to min bounded y
-                        if (hasWalkZone && transform.position.y < minWalkPoint.y)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                    case 5:
-                        //move down and to the left
-                        myRigidBody.velocity = new Vector2((speed * -1), (speed * -1));
-                        //checks y compared to min bounded y or x compared to min bounded x
-                        if (hasWalkZone && transform.position.y < minWalkPoint.y || transform.position.x < minWalkPoint.x)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                    case 6:
-                        //move left
-                        myRigidBody.velocity = new Vector2((speed * -1), 0);
-                        //check x compared to min bounded x
-                        if (hasWalkZone && transform.position.x < minWalkPoint.x)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                    case 7:
-                        //move up and to the left
-                        myRigidBody.velocity = new Vector2((speed * -1), speed);
-                        //checks y compared to max bounded y or x compared to min bounded x
-                        if (hasWalkZone && transform.position.y > maxWalkPoint.y || transform.position.x < minWalkPoint.x)
-                        {
-                            isWalking = false;
-                            waitCounter = waitTime;
-                        }
-                        break;
-                }
+                    walkCounter -= Time.deltaTime;
+
+                    switch (walkDir)
+                    {
+                        case 0:
+                            //move up
+                            myRigidBody.velocity = new Vector2(0, speed);
+                            //checks y pos compated to bounded y
+                            if (hasWalkZone && transform.position.y > maxWalkPoint.y)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                        case 1:
+                            //move up and to the right
+                            myRigidBody.velocity = new Vector2(speed, speed);
+                            //checks y compred to  max bounded y or x compared to max bounded x
+                            if (hasWalkZone && transform.position.y > maxWalkPoint.y || transform.position.x > maxWalkPoint.x)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                        case 2:
+                            ////move to the right
+                            myRigidBody.velocity = new Vector2(speed, 0);
+                            //checks x compared to max bounded x
+                            if (hasWalkZone && transform.position.x > maxWalkPoint.x)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                        case 3:
+                            //move down and to the right
+                            myRigidBody.velocity = new Vector2(speed, (speed * -1));
+                            //checks y compared to min bounded y or x compared to max bounded x
+                            if (hasWalkZone && transform.position.y < minWalkPoint.y || transform.position.x > maxWalkPoint.x)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                        case 4:
+                            //move down
+                            myRigidBody.velocity = new Vector2(0, (speed * -1));
+                            //checks y compared to min bounded y
+                            if (hasWalkZone && transform.position.y < minWalkPoint.y)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                        case 5:
+                            //move down and to the left
+                            myRigidBody.velocity = new Vector2((speed * -1), (speed * -1));
+                            //checks y compared to min bounded y or x compared to min bounded x
+                            if (hasWalkZone && transform.position.y < minWalkPoint.y || transform.position.x < minWalkPoint.x)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                        case 6:
+                            //move left
+                            myRigidBody.velocity = new Vector2((speed * -1), 0);
+                            //check x compared to min bounded x
+                            if (hasWalkZone && transform.position.x < minWalkPoint.x)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                        case 7:
+                            //move up and to the left
+                            myRigidBody.velocity = new Vector2((speed * -1), speed);
+                            //checks y compared to max bounded y or x compared to min bounded x
+                            if (hasWalkZone && transform.position.y > maxWalkPoint.y || transform.position.x < minWalkPoint.x)
+                            {
+                                isWalking = false;
+                                waitCounter = waitTime;
+                            }
+                            break;
+                    }
 
 
-                transform.up = myRigidBody.velocity.normalized;
+                    transform.up = myRigidBody.velocity.normalized;
 
-                if (walkCounter < 0)
-                {
-                    isWalking = false;
-                    waitCounter = waitTime;
+                    if (walkCounter < 0)
+                    {
+                        isWalking = false;
+                        waitCounter = waitTime;
+                    }
                 }
             }
+            // sneeze
             if (spriteRenderer.sprite == sprite2)
             {
                 isWalking = false;
@@ -184,9 +187,22 @@ public class hazmatMaster : MonoBehaviour
   
     IEnumerator sneezed()
     {
+        waitCounter = -1;
+        chasing = false;
+        sneezedetect child = GetComponentInChildren<sneezedetect>();
+        child.sneezing = true;
         yield return new WaitForSeconds(3f);
         spriteRenderer.sprite = sprite1;
+        child.sneezing = false;
     }
 
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!chasing)
+        {
+            getDir();
+        }
+
+    }
 }
 

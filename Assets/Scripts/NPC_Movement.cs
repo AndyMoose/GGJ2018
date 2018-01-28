@@ -158,6 +158,13 @@ public class NPC_Movement : MonoBehaviour
         isWalking = true;
         walkCounter = walkTime;
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+            getDir();
+        
+    }
 }
 
 

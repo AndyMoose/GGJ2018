@@ -33,10 +33,10 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        xMin = -11f;
-        xMax = 8f;
-        yMin = -9f;
-        yMax = 10f;
+       // xMin = -11f;
+       // xMax = 8f;
+       // yMin = -9f;
+       // yMax = 10f;
     }
 
     private void Update()
@@ -76,10 +76,10 @@ public class PlayerController : MonoBehaviour
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         rigidbody.velocity = movement * speed;
 
-        rigidbody.position = new Vector2(
-            Mathf.Clamp(rigidbody.position.x, xMin, xMax),
-            Mathf.Clamp(rigidbody.position.y, yMin, yMax)
-            );
+        //rigidbody.position = new Vector2(
+        //    Mathf.Clamp(rigidbody.position.x, xMin, xMax),
+        //    Mathf.Clamp(rigidbody.position.y, yMin, yMax)
+        //    );
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position);

@@ -9,6 +9,7 @@ TagManager:
   - boundaries
   - npc
   - hazmat
+  - obstacle
   layers:
   - Default
   - TransparentFX
