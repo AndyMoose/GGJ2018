@@ -1854,23 +1854,6 @@ Transform:
   m_Father: {fileID: 1290246810}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!1 &652506030 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1906633289716298, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833442199}
---- !u!114 &652506038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 652506030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c7e470201849b428454687a235817d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionLoss: 0
 --- !u!1 &666256289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4594,6 +4577,11 @@ Prefab:
       propertyPath: m_Name
       value: LoseCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 82750516150023020, guid: 42b2382fceed0b84a9923f03e6b8a1f5,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42b2382fceed0b84a9923f03e6b8a1f5, type: 2}
   m_IsPrefabParent: 0
@@ -4966,11 +4954,6 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46e031098c33e67409fd87fe349b51e2, type: 2}
-    - target: {fileID: 70386221515146918, guid: fc0bde1010f959248aa2e9ef8e61b9cd,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc0bde1010f959248aa2e9ef8e61b9cd, type: 2}
   m_IsPrefabParent: 0
@@ -5278,6 +5261,21 @@ Prefab:
         type: 2}
       propertyPath: totalNPCs
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 82084165589432980, guid: 5839fc2bd11880344b1438f84a369c8d,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82084165589432980, guid: 5839fc2bd11880344b1438f84a369c8d,
+        type: 2}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82084165589432980, guid: 5839fc2bd11880344b1438f84a369c8d,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5839fc2bd11880344b1438f84a369c8d, type: 2}

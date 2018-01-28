@@ -14,12 +14,14 @@ public class winCondition : MonoBehaviour {
     public GameObject door;
 
     public bool won;
+    private bool soundPlayed;
 
     // Use this for initialization
     void Start () {
         gameWin = gameObject.GetComponent<Canvas>();
         fanfare = GetComponent<AudioSource>();
         won = false;
+        soundPlayed = false;
     }
 	
 	// Update is called once per frame
@@ -30,12 +32,12 @@ public class winCondition : MonoBehaviour {
             door.GetComponent<dooropen>().opendoor = true;
 
         }
-        if(won)
+        if(won && soundPlayed == false)
         {
-            if (fanfare.isPlaying == false)
-            {
-                fanfare.Play();
-            }
+
+            fanfare.PlayOneShot(fanfare.clip, 1f);
+            soundPlayed = true;
+            
         }
 	}
 }
