@@ -22,6 +22,10 @@ public class PlayerController : MonoBehaviour
     AudioSource sneeze2;
     AudioSource sneeze3;
 
+    public int sneezecount;
+
+    public Canvas loser;
+
     private void Start()
     {
         AudioSource[] audios = GetComponents<AudioSource>();
@@ -43,26 +47,34 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
-            Quaternion noRotate = transform.rotation;
-            Vector2 stayStill = transform.position;
-            nextFire = Time.time + fireRate;
-            Instantiate(snot, snotPos.position, snotPos.rotation);
+            if (sneezecount > 0)
+            {
+                Quaternion noRotate = transform.rotation;
+                Vector2 stayStill = transform.position;
+                nextFire = Time.time + fireRate;
+                Instantiate(snot, snotPos.position, snotPos.rotation);
 
-            int index = Random.Range(0, 2);
-            if (index == 0)
-            {
-                sneeze1.Play();
-            }
-            else if (index == 1)
-            {
-                sneeze2.Play();
-            }
-            else if (index == 2)
-            {
-                sneeze3.Play();
-            }
+                int index = Random.Range(0, 2);
+                if (index == 0)
+                {
+                    sneeze1.Play();
+                }
+                else if (index == 1)
+                {
+                    sneeze2.Play();
+                }
+                else if (index == 2)
+                {
+                    sneeze3.Play();
+                }
 
-            StartCoroutine(PauseMovement());
+                StartCoroutine(PauseMovement());
+                sneezecount = sneezecount - 1;
+            }
+            else
+            {
+                loser.GetComponent<loseCondition>().isLosing = true;
+            }
         }
 
 

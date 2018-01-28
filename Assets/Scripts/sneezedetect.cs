@@ -52,7 +52,7 @@ public class sneezedetect : MonoBehaviour {
             if (chase)
             {
                 GetComponentInParent<hazmatMaster>().chasing = true;
-                GetComponentInParent<Rigidbody2D>().position = Vector2.MoveTowards(GetComponentInParent<Rigidbody2D>().transform.position, fuck.gameObject.GetComponent<Rigidbody2D>().transform.position, .05f);
+                GetComponentInParent<Rigidbody2D>().position = Vector2.MoveTowards(GetComponentInParent<Rigidbody2D>().transform.position, fuck.gameObject.GetComponent<Rigidbody2D>().transform.position, .13f);
                 //chase = false;
 
 

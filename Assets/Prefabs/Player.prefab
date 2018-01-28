@@ -378,7 +378,9 @@ MonoBehaviour:
   runSpeed: 85
   snot: {fileID: 1752408782985926, guid: e25be87ed8f01d44eb1d2dc613e3ac02, type: 2}
   snotPos: {fileID: 4754854086746366}
-  fireRate: 5
+  fireRate: 3
+  sneezecount: 10
+  loser: {fileID: 0}
 --- !u!212 &212607951917737262
 SpriteRenderer:
   m_ObjectHideFlags: 1
